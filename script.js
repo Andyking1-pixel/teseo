@@ -81,8 +81,9 @@ function applyConfig() {
   const whatsappButton = document.querySelector('.whatsapp-button');
   mapsButton.href = event.mapsUrl;
   whatsappButton.href = `https://wa.me/${event.whatsappNumber}?text=${encodeURIComponent(event.whatsappMessage)}`;
-  setText(mapsButton, texts.mapsButton);
-  setText(whatsappButton, texts.whatsappButton);
+  mapsButton.textContent = texts.mapsButton;
+  whatsappButton.textContent = texts.whatsappButton;
+
 
   coverImage.src = assets.coverImage;
   coverImage.alt = `${childName}, el festejado`;
