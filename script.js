@@ -105,6 +105,7 @@ function getEventDate() {
 const eventDate = getEventDate();
 
 function updateCountdown() {
+  console.log(eventDate, new Date(), eventDate - new Date());
   const remaining = Math.max(0, eventDate - new Date());
   const totalSeconds = Math.floor(remaining / 1000);
   const values = {
