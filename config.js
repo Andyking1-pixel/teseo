@@ -10,7 +10,7 @@ window.invitationConfig = {
   event: {
     day: 30,
     month: 8, // 1 = enero, 8 = agosto, 12 = diciembre
-    year: null, // Usa null para elegir automáticamente el próximo año disponible.
+    year: 2026,
     dateLabel: 'AGOSTO',
     time: '14:00', // Formato de 24 horas para el contador.
     timeLabel: '2:00',
@@ -47,6 +47,7 @@ window.invitationConfig = {
   },
 
   countdown: {
+    targetDate: '2026-08-30T14:00:00-06:00', // 30 de agosto de 2026, 2:00 PM, hora de México.
     labels: {
       days: 'DÍAS',
       hours: 'HRS',

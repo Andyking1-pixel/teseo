@@ -91,6 +91,8 @@ function applyConfig() {
 }
 
 function getEventDate() {
+  if (config.countdown.targetDate) return new Date(config.countdown.targetDate);
+
   const now = new Date();
   const [hours, minutes] = config.event.time.split(':').map(Number);
   const initialYear = config.event.year || now.getFullYear();
