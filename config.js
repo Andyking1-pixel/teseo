@@ -22,21 +22,21 @@ window.invitationConfig = {
   },
 
   assets: {
-    coverImage: 'assets/images/portada.webp',
+    coverImage: 'assets/images/portada.png',
     mainAudio: 'assets/audio/audio.mp3',
     coinAudio: 'assets/audio/soundcoin.mp3'
   },
 
   texts: {
     welcomeLevel: '¡Nivel 4 desbloqueado!',
-    welcomeCopy: 'te invita a celebrar una aventura muy especial',
+    welcomeCopy: 'TE INVITA A CELEBRAR UNA AVENTURA MUY ESPECIAL',
     startButtonLineOne: 'Presiona para comenzar',
     startButtonLineTwo: 'la aventura',
     heroEyebrow: '⭐ ¡Nueva aventura desbloqueada!',
     heroBirthday: 'CUMPLE',
     heroYears: 'AÑOS',
     intro: '¡Acompáñanos a celebrar|el cumpleaños de nuestro pequeño héroe!',
-    missionTitle: 'LA MISIÓN COMIENZA EN',
+    missionTitle: 'LA MISIÓN COMIENZA EL',
     countdownTitle: 'FALTAN',
     locationSubtitle: '¡Aquí estará nuestro Reino Champiñón!',
     mapsButton: '🗺️ Ver ubicación',

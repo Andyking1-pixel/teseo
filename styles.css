@@ -73,10 +73,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .level-label, .eyebrow, .rsvp-kicker {
   color: var(--white);
-  font-size: clamp(.72rem, 3vw, .9rem);
-  letter-spacing: .11em;
-  margin: 0 0 12px;
-  text-shadow: 2px 2px 0 var(--blue);
+  font-size: clamp(1rem, 4vw, 1.35rem);
+  font-weight: 900;
+  letter-spacing: .08em;
+  margin: 0 0 16px;
+  text-shadow:
+    3px 3px 0 var(--blue),
+    0 0 8px rgba(255,255,255,.5);
 }
 
 h1, h2, h3, p { margin-top: 0; }
@@ -92,7 +95,7 @@ h1 {
 
 h1 span { color: var(--red); text-shadow: 3px 3px 0 var(--yellow), 6px 6px 0 var(--ink); }
 
-.welcome-copy { color: var(--white); font-family: system-ui, sans-serif; font-size: 1rem; font-weight: 800; line-height: 1.4; margin-bottom: 22px; }
+.welcome-copy { color: var(--white); font-family: system-ui, sans-serif; font-size: 1.08rem; font-weight: 900; line-height: 1.5; margin-bottom: 24px; text-transform: uppercase;  letter-spacing: .05em; }
 
 .mushroom {
   animation: question-block-float 2.5s steps(3, end) infinite;
