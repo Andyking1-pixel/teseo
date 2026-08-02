@@ -86,9 +86,9 @@ h1, h2, h3, p { margin-top: 0; }
 
 h1 {
   color: var(--yellow);
-  font-size: clamp(2.4rem, 13vw, 4.2rem);
-  letter-spacing: -.06em;
-  line-height: .8;
+  font-size: clamp(2.6rem, 13vw, 4.5rem);
+  letter-spacing: -.03em;
+  line-height: .9;
   margin-bottom: 22px;
   text-shadow: 3px 3px 0 var(--red), 6px 6px 0 var(--ink);
 }
@@ -358,4 +358,58 @@ body.is-starting::after {
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+.hero-logo{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:8px 0 20px;
+}
+
+.logo-super-teseo{
+    width:88%;
+    max-width:420px;
+    height:auto;
+    display:block;
+}
+
+.logo-super-teseo{
+    display:block;
+    width:82%;
+    max-width:430px;
+    margin:0 auto 15px;
+}
+.hero-image-wrap{
+    position:relative;
+}
+
+.hero-side{
+    position:absolute;
+    z-index:2;
+    pointer-events:none;
+    transition:.3s;
+}
+
+.hero-luigi{
+    width:120px;
+    left:-35px;
+    top:10px;
+}
+
+.hero-yoshi{
+    width:115px;
+    right:-35px;
+    bottom:20px;
+}
+
+.hero-toad{
+    width:95px;
+    right:15px;
+    top:45px;
+}
+
+.hero-image{
+    position:relative;
+    z-index:5;
 }
