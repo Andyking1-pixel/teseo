@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#e52521" />
+    <meta name="description" content="Invitación al cumpleaños número 4 de Teseo Santiago." />
+    <title>Teseo cumple 4 años</title>
+    <link rel="preload" as="image" href="assets/images/portada.webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="welcome-screen" id="welcomeScreen" aria-labelledby="welcomeTitle">
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="welcome-content">
+          <p class="level-label">¡Nivel 4 desbloqueado!</p>
+          <h1 id="welcomeTitle"><span>TESEO</span> SANTIAGO</h1>
+          <p class="welcome-copy">te invita a celebrar una aventura muy especial</p>
+          <div class="mushroom" aria-hidden="true"><i></i><b></b><em></em></div>
+          <button class="start-button" id="startButton" type="button">
+            <span class="pixel-mario" aria-hidden="true"></span>
+            Presiona para comenzar<br />la aventura
+          </button>
+        </div>
+        <div class="ground" aria-hidden="true"></div>
+      </section>
+
+      <section class="invitation" id="invitation" aria-hidden="true">
+        <header class="hero">
+          <div class="cloud cloud-three"></div>
+          <p class="eyebrow">⭐ ¡Nueva aventura desbloqueada!</p>
+          <h2>TESEO<br /><span>CUMPLE 4</span></h2>
+          <p class="hero-subtitle">AÑOS</p>
+          <div class="hero-image-wrap">
+            <img src="assets/images/portada.webp" alt="Teseo, el festejado" class="hero-image" />
+          </div>
+          <div class="pipe" aria-hidden="true"><i></i></div>
+        </header>
+
+        <div class="content">
+          <section class="intro-section section-card">
+            <span class="coin" aria-hidden="true">★</span>
+            <p>¡Acompáñanos a celebrar<br />el cumpleaños de nuestro pequeño héroe!</p>
+          </section>
+
+          <section class="event-section" aria-labelledby="eventTitle">
+            <h3 id="eventTitle">LA MISIÓN COMIENZA EN</h3>
+            <div class="event-details">
+              <div class="detail detail-date">
+                <span class="detail-icon" aria-hidden="true">📅</span>
+                <p><strong>30</strong><span>AGOSTO</span></p>
+              </div>
+              <div class="detail">
+                <span class="detail-icon" aria-hidden="true">⏰</span>
+                <p><strong>2:00</strong><span>PM</span></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="countdown-section" aria-labelledby="countdownTitle">
+            <p id="countdownTitle">FALTAN</p>
+            <div class="countdown" aria-live="polite">
+              <div><strong id="days">00</strong><span>DÍAS</span></div>
+              <div><strong id="hours">00</strong><span>HRS</span></div>
+              <div><strong id="minutes">00</strong><span>MIN</span></div>
+              <div><strong id="seconds">00</strong><span>SEG</span></div>
+            </div>
+          </section>
+
+          <section class="location-section section-card" aria-labelledby="locationTitle">
+            <span class="location-pin" aria-hidden="true">📍</span>
+            <h3 id="locationTitle">TERRAZA LAS PALMAS</h3>
+            <p>¡Aquí estará nuestro Reino Champiñón!</p>
+            <a class="action-button maps-button" href="https://maps.app.goo.gl/oea4S3SXzyB6B4km7?g_st=iw" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">🗺️</span> Ver ubicación
+            </a>
+          </section>
+
+          <section class="rsvp-section" aria-labelledby="rsvpTitle">
+            <p class="rsvp-kicker">¿LISTO PARA JUGAR?</p>
+            <h3 id="rsvpTitle">Confirma tu asistencia</h3>
+            <a class="action-button whatsapp-button" href="https://wa.me/529221392613?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Teseo." target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">💬</span> Confirmar por WhatsApp
+            </a>
+          </section>
+        </div>
+
+        <footer>
+          <div class="bricks" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p>¡Te esperamos para esta gran aventura!</p>
+        </footer>
+      </section>
+    </main>
+
+    <button class="sound-button" id="soundButton" type="button" aria-label="Activar música" aria-pressed="false" hidden>
+      <span aria-hidden="true">🔇</span>
+    </button>
+    <audio id="backgroundMusic" preload="none" loop>
+      <source src="assets/audio/audio.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
