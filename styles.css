@@ -397,11 +397,11 @@ body.is-starting::after {
 }
 
 .hero-main{
-    position:absolute;
     width:180px;
+    position:absolute;
     left:50%;
-    transform:translateX(-50%);
-    bottom:25px;
+    transform:translateX(-68%);
+    bottom:-10px;
     z-index:5;
 }
 
@@ -414,10 +414,11 @@ body.is-starting::after {
 }
 
 .hero-toad{
+    width:95px;
     position:absolute;
-    width:90px;
-    right:35px;
-    top:-10px;
+    right:5px;
+    top:-35px;
+    z-index:4;
 }
 
 .hero-yoshi{
@@ -425,4 +426,9 @@ body.is-starting::after {
     width:105px;
     right:-30px;
     bottom:10px;
+}
+.cumple-img{
+    width:240px;
+    display:block;
+    margin:0 auto;
 }
