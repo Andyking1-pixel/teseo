@@ -380,7 +380,8 @@ body.is-starting::after {
 .hero-logo{
     display:flex;
     justify-content:center;
-    margin-top:10px;
+    margin-top:-25px;
+    margin-bottom:-10px;
 }
 
 .logo-super-teseo{
@@ -397,25 +398,26 @@ body.is-starting::after {
 
 .hero-main{
     position:absolute;
-    width:250px;
+    width:180px;
     left:50%;
     transform:translateX(-50%);
-    bottom:0;
+    bottom:25px;
     z-index:5;
 }
 
 .hero-luigi{
     position:absolute;
-    width:120px;
-    left:-35px;
-    top:25px;
+    width:105px;
+    right:-25px;
+    bottom:20px;
+    left:auto;
 }
 
 .hero-toad{
     position:absolute;
-    width:95px;
-    right:-10px;
-    top:20px;
+    width:90px;
+    right:35px;
+    top:-10px;
 }
 
 .hero-yoshi{
