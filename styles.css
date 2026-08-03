@@ -413,3 +413,28 @@ body.is-starting::after {
     position:relative;
     z-index:5;
 }
+.cumple-banner{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:12px;
+    margin:18px 0 10px;
+}
+
+.cumple-text{
+    color:#fff;
+    font-size:34px;
+    font-weight:900;
+    text-shadow:3px 3px 0 #1f4ea5;
+    letter-spacing:3px;
+}
+
+.cumple-num{
+    font-size:95px;
+    color:#e43122;
+    font-weight:900;
+    line-height:1;
+    text-shadow:
+        4px 4px 0 #f8d437,
+        7px 7px 0 #111;
+}
