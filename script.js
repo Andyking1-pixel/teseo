@@ -40,8 +40,8 @@ function applyConfig() {
   const firstName = nameParts.shift() || childName;
   const remainingName = nameParts.join(' ');
   const welcomeName = document.getElementById('welcomeTitle');
-  const heroTitle = document.querySelector('.hero h2');
-  const coverImage = document.querySelector('.hero-image');
+  const heroTitle = document.querySelector('.hero h2'); // ya no se usa
+  const coverImage = document.querySelector('.hero-top-image');
   const audioSource = music.querySelector('source');
 
   document.title = pageTitle;
@@ -50,13 +50,15 @@ function applyConfig() {
 
   welcomeName.querySelector('span').textContent = firstName.toUpperCase();
   [...welcomeName.childNodes].find((node) => node.nodeType === Node.TEXT_NODE).nodeValue = ` ${remainingName.toUpperCase()}`;
-  heroTitle.childNodes[0].nodeValue = firstName.toUpperCase();
-  heroTitle.querySelector('span').textContent = `${texts.heroBirthday} ${age}`;
+  if (heroTitle) {
+    heroTitle.childNodes[0].nodeValue = firstName.toUpperCase();
+    heroTitle.querySelector('span').textContent = `${texts.heroBirthday} ${age}`;
+}
 
   setText('.level-label', texts.welcomeLevel);
   setText('.welcome-copy', texts.welcomeCopy);
   setText('.eyebrow', texts.heroEyebrow);
-  setText('.hero-subtitle', texts.heroYears);
+  
   setTextWithBreaks(document.querySelector('.intro-section p'), texts.intro);
   setText('.event-section h3', texts.missionTitle);
   setText('.detail-date strong', String(event.day).padStart(2, '0'));
@@ -85,8 +87,10 @@ function applyConfig() {
   whatsappButton.textContent = texts.whatsappButton;
 
 
+  if (coverImage) {
   coverImage.src = assets.coverImage;
   coverImage.alt = `${childName}, el festejado`;
+}
   audioSource.src = assets.mainAudio;
   music.load();
 }
