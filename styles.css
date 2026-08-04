@@ -214,11 +214,7 @@ h1 span { color: var(--red); text-shadow: 3px 3px 0 var(--yellow), 6px 6px 0 var
   z-index: 3;
 }
 .eyebrow { margin-bottom: 11px; position: relative; z-index: 2; }
-h2 { color: var(--red); font-size: clamp(2.8rem, 14vw, 4.5rem); letter-spacing: -.07em; line-height: .7; margin: 0; position: relative; text-shadow: 3px 3px 0 var(--yellow), 6px 6px 0 var(--ink); z-index: 2; }
-h2 span { color: var(--yellow); font-size: .62em; text-shadow: 3px 3px 0 var(--red), 5px 5px 0 var(--ink); }
-.hero-subtitle { color: var(--white); font-size: 1.45rem; letter-spacing: .25em; margin: 14px 0 0 .25em; position: relative; text-shadow: 2px 2px 0 var(--blue); z-index: 2; }
-.hero-image-wrap { bottom: 0; height: 282px; left: 50%; overflow: hidden; position: absolute; transform: translateX(-50%); width: min(100vw, 500px); z-index: 2; }
-.hero-image { display: block; height: 100%; object-fit: contain; object-position: center bottom; width: 100%; }
+
 
 
 .content { margin: 0 auto; max-width: 550px; padding: 30px 20px 16px; position: relative; }
