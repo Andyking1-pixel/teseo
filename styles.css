@@ -370,26 +370,7 @@ body.is-starting::after {
 .hero-top-image{
     display:block;
     width:100%;
-    max-width:430px;
+    max-width:500px;
     height:auto;
-    margin:0 auto;
-}
-
-.hero-logo{
-    display:flex;
-    justify-content:center;
-    margin-top:-25px;
-    margin-bottom:-10px;
-}
-
-.logo-super-teseo{
-    width:72%;
-    max-width:310px;
-}
-
-
-.cumple-img{
-    width:240px;
-    display:block;
-    margin:0 auto;
+    margin:auto;
 }

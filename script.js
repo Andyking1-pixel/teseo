@@ -40,7 +40,7 @@ function applyConfig() {
   const firstName = nameParts.shift() || childName;
   const remainingName = nameParts.join(' ');
   const welcomeName = document.getElementById('welcomeTitle');
-  const heroTitle = document.querySelector('.hero h2'); // ya no se usa
+  
   const coverImage = document.querySelector('.hero-top-image');
   const audioSource = music.querySelector('source');
 
@@ -50,10 +50,7 @@ function applyConfig() {
 
   welcomeName.querySelector('span').textContent = firstName.toUpperCase();
   [...welcomeName.childNodes].find((node) => node.nodeType === Node.TEXT_NODE).nodeValue = ` ${remainingName.toUpperCase()}`;
-  if (heroTitle) {
-    heroTitle.childNodes[0].nodeValue = firstName.toUpperCase();
-    heroTitle.querySelector('span').textContent = `${texts.heroBirthday} ${age}`;
-}
+
 
   setText('.level-label', texts.welcomeLevel);
   setText('.welcome-copy', texts.welcomeCopy);
@@ -89,7 +86,7 @@ function applyConfig() {
 
   if (coverImage) {
   coverImage.src = assets.coverImage;
-  coverImage.alt = `${childName}, el festejado`;
+  coverImage.alt = `Portada de ${childName}`;
 }
   audioSource.src = assets.mainAudio;
   music.load();
@@ -110,7 +107,7 @@ function getEventDate() {
 const eventDate = getEventDate();
 
 function updateCountdown() {
-  console.log(eventDate, new Date(), eventDate - new Date());
+
   const remaining = Math.max(0, eventDate - new Date());
   const totalSeconds = Math.floor(remaining / 1000);
   const values = {

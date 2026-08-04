@@ -22,7 +22,7 @@ window.invitationConfig = {
   },
 
   assets: {
-    coverImage: 'assets/images/mario-nuevo.png',
+    coverImage: 'assets/images/hero-final.png',
     mainAudio: 'assets/audio/audio.mp3',
     coinAudio: 'assets/audio/soundcoin.mp3'
   },
