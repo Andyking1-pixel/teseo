@@ -16,7 +16,7 @@ window.invitationConfig = {
     timeLabel: '2:00',
     meridiem: 'PM',
     location: 'Terraza Las Palmas',
-    mapsUrl: 'https://maps.app.goo.gl/oea4S3SXzyB6B4km7?g_st=iw',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=José+María+Sánchez+4130,+El+Carmen,+44980+Guadalajara,+Jalisco',
     whatsappNumber: '529221392613',
     whatsappMessage: 'Hola, confirmo mi asistencia al cumpleaños de Teseo.'
   },
